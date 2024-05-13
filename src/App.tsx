@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Logo from './assets/images/talkitive.ai.png';
+import AddEmail from './components/AddEmail';
+import LinearGradientImage from './assets/images/Gradient bg.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='sectionOne'>
+        <img className="gradientPattern" src={LinearGradientImage} />
+        <img className="mainLogo" src={Logo} height={90} alt="talkitive ai logo" />
+        <h1>GenAI Customer Support</h1>
+        <div className="addEmailContainer">
+          <p>Please submit your email to join our Waitlist.</p>
+          <AddEmail />
+        </div>
+      </div>
     </div>
   );
 }
