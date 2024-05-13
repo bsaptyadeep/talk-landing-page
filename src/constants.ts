@@ -1,1 +1,1 @@
-export const SERVER_URL: string = "http://localhost:8000"
+export const SERVER_URL: string = "https://talk-server-1.onrender.com"
