@@ -1,0 +1,134 @@
+.introPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.tryNew {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 8px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: var(--borders);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: var(--borders);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--borders-dark);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: var(--borders);
+    background-color: var(--white);
+    box-shadow: 0 9px 13px -5px var(--borders), 0 2px 2px 0 var(--dark-purple-5-opacity), inset 0 -3px 0 0 var(--dark-purple-5);
+    color: var(--dark-purple);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 36px;
+    padding: 6px 16px;
+    font-weight: 500;
+    position: relative;
+    gap: 20px;
+}
+
+.tryNewLeft {
+    background-color: var(--dark-indigio);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.tryNowDivider {
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.introHeader {
+    font-weight: 800;
+}
+
+.introHeader span {
+    color: var(--dark-indigio);
+}
+
+.introText {
+    color: var(--grey);
+    width: 600px;
+    text-align: center;
+}
+
+.introHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.violetButton {
+    border: 1px solid var(--dark-indigio);
+    background-color: var(--indigo);
+    color: var(--white);
+    box-shadow: 0 9px 13px -5px var(--indigo-40-opacity), 0 2px 2px 0 var(--indigo-25-opacity), inset 0 -2px 0 0 var(--dark-indigo-50-opacity), inset 0 0 0 1px var(--white-20-opacity), inset 0 7px 12px 0 var(--purple);
+    white-space: pre;
+    border-radius: 8px;
+    flex-flow: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+
+.violetButton:hover {
+    cursor: pointer;
+}
+
+.introButtonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.greyButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--borders) var(--borders) var(--borders-dark);
+    background-color: var(--white);
+    box-shadow: 0 2px 2px -17px var(--dark-purple-5-opacity), 0 9px 13px -5px var(--dark-purple-10-opacity), inset 0 -3px 0 0 var(--dark-purple-5);
+    color: var(--dark-purple);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+
+.greyButton:hover {
+    cursor: pointer;
+}
+
+.freePlanText {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.introButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

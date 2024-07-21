@@ -1,0 +1,79 @@
+:root {}
+
+.navigationMenu,
+.navigationMenuList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationMenu {
+    padding: 1rem 2.5rem;
+}
+
+.siteLogo {
+    height: 1.7rem;
+}
+
+.navigationMenuList {
+    gap: 1rem
+}
+
+.navigationMenuListItem {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.activeNavigationItem {
+    background-color: rgb(224, 241, 255);
+    color: #575aff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navigationMenuListItem:hover {
+    cursor: pointer;
+}
+
+.violetButton {
+    border: 1px solid var(--dark-indigio);
+    background-color: var(--indigo);
+    color: var(--white);
+    width: 100px;
+    box-shadow: 0 9px 13px -5px var(--indigo-40-opacity), 0 2px 2px 0 var(--indigo-25-opacity), inset 0 -2px 0 0 var(--dark-indigo-50-opacity), inset 0 0 0 1px var(--white-20-opacity), inset 0 7px 12px 0 var(--purple);
+    white-space: pre;
+    border-radius: 8px;
+    flex-flow: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    min-height: 36px;
+    max-height: 36px;
+    padding: 12px 24px;
+    font-weight: 500;
+    display: flex;
+    position: relative;
+}
+
+.violetButton:hover {
+    cursor: pointer;
+}
+
+.navRightButtonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.plainButton {
+    background-color: var(--white);
+    color: var(--black-80-opacity);
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.plainButton:hover {
+    cursor: pointer;
+    color: #3b32f9;
+}
