@@ -1,24 +1,32 @@
-import { Box } from '@mui/material'
+import { Box, IconButton } from '@mui/material'
 import React, { useState } from 'react'
 import css from './styles.module.css';
-import Logo from '../../assets/images/square.svg';
+import Logo from '../../assets/images/Frame 14410.png';
+import MenuIcon from '@mui/icons-material/Menu';
+import HamburgerMenu from '../HamburgerMenu';
 
-const navigationMap = [
+export interface INavigationItem {
+    id: string,
+    label: string,
+    route: string
+}
+
+const navigationMap: INavigationItem[] = [
     {
         id: "features",
         label: "Features",
         route: "/"
     },
-    {
-        id: "integrations",
-        label: "Integrations",
-        route: "/"
-    },
-    {
-        id: "pricing",
-        label: "Pricing",
-        route: "/"
-    },
+    // {
+    //     id: "integrations",
+    //     label: "Integrations",
+    //     route: "/"
+    // },
+    // {
+    //     id: "pricing",
+    //     label: "Pricing",
+    //     route: "/"
+    // },
     {
         id: "liveDemo",
         label: "Live Demo",
@@ -33,6 +41,11 @@ const navigationMap = [
 
 const Navbar = () => {
     const [activeNavigationItem, setActiveNavigationItem] = useState<string>("features")
+    const [openHamburgerMenu, setOpenHamburgerMenu] = useState<boolean>(false)
+
+    const handleCloseHamburgerMenu = () => {
+        setOpenHamburgerMenu(false)
+    }
 
     return (
         <Box className={css.navigationMenu}>
@@ -41,7 +54,7 @@ const Navbar = () => {
                 {
                     navigationMap.map((navItem) => {
                         return (
-                            <Box key={navItem.id} className={`${css.navigationMenuListItem}
+                            <Box key={`menu-${navItem.id}`} className={`${css.navigationMenuListItem}
                             ${activeNavigationItem === navItem.id && css.activeNavigationItem}`}
                                 onClick={() => {
                                     setActiveNavigationItem(navItem.id)
@@ -58,12 +71,26 @@ const Navbar = () => {
                 <button className={css.plainButton}>
                     Become a partner
                 </button>
-                <a style={{ textDecoration: "none"}} href="https://data-matter.vercel.app/">
+                <a style={{ textDecoration: "none" }} href="https://data-matter.vercel.app/">
                     <button className={css.violetButton}>
                         Sign Up
                     </button>
                 </a>
             </Box>
+            <Box className={css.HamburgerMenuIcon}>
+                <IconButton onClick={() => {
+                    setOpenHamburgerMenu(true)
+                }}>
+                    <MenuIcon />
+                </IconButton>
+            </Box>
+            {
+                openHamburgerMenu &&
+                <HamburgerMenu
+                    navigationMap={navigationMap}
+                    handleClose={handleCloseHamburgerMenu} />
+            }
+
         </Box>
     )
 }

@@ -52,7 +52,9 @@
 }
 
 .introHeader {
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .introHeader span {
@@ -61,8 +63,8 @@
 
 .introText {
     color: var(--grey);
-    width: 600px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .introHeaderContainer {
@@ -131,4 +133,18 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+@media (max-width: 700px) {
+    .introHeader {
+        font-size: 2rem;
+    }
+
+    .introText {
+        font-size: 1rem;
+    }
+
+    .introPage {
+        padding: 4rem 1rem 1rem 1rem;
+    }
 }

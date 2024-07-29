@@ -12,7 +12,7 @@
 }
 
 .siteLogo {
-    height: 1.7rem;
+    height: 3rem;
 }
 
 .navigationMenuList {
@@ -76,4 +76,26 @@
 .plainButton:hover {
     cursor: pointer;
     color: #3b32f9;
+}
+
+.HamburgerMenuIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* display: none; */
+    visibility: hidden;
+}
+
+@media (max-width: 700px) {
+    .navigationMenuList {
+        display: none;
+    }
+
+    .navRightButtonGroup {
+        display: none;
+    }
+
+    .HamburgerMenuIcon {
+        visibility: visible;
+    }
 }

@@ -17,13 +17,13 @@ const IntroPage = () => {
         </Box>
       </Box>
       <Box className={css.introHeaderContainer}>
-        <Typography className={css.introHeader} variant='h2'>
+        <p className={css.introHeader}>
           Build your <span>AI Workforce</span>
-        </Typography>
-        <Typography variant='h6' className={css.introText}>
+        </p>
+        <p className={css.introText}>
           Recruit teams of AI agents to complete tasks on autopilot.
           ‍Grow your business, not your headcount.
-        </Typography>
+        </p>
       </Box>
       <Box className={css.introButtonContainer}>
         <Box className={css.introButtonGroup}>
