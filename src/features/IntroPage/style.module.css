@@ -37,6 +37,7 @@
     font-weight: 500;
     position: relative;
     gap: 20px;
+    z-index: 2;
 }
 
 .tryNewLeft {
@@ -90,6 +91,7 @@
     font-weight: 600;
     display: flex;
     position: relative;
+    z-index: 2;
 }
 
 .violetButton:hover {

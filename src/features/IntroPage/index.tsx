@@ -1,7 +1,8 @@
 import React from 'react';
 import css from './style.module.css';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { MAVEN_AI_APPLICATION } from '../../constants';
+import Features from '../features';
 
 const IntroPage = () => {
   return (
@@ -38,6 +39,7 @@ const IntroPage = () => {
         </Box>
         <p className={css.freePlanText}>Free plan - No card required</p>
       </Box>
+      <Features />
     </Box>
   )
 }

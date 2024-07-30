@@ -1,7 +1,7 @@
 import { Box, IconButton } from '@mui/material'
 import React, { useState } from 'react'
 import css from './styles.module.css';
-import Logo from '../../assets/images/Frame 14410.png';
+import Logo from '../../assets/images/datachat-logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import HamburgerMenu from '../HamburgerMenu';
 import { MAVEN_AI_APPLICATION } from '../../constants';
@@ -49,7 +49,7 @@ const Navbar = () => {
     }
 
     return (
-        <Box className={css.navigationMenu}>
+        <Box style={{ position: openHamburgerMenu ? "inherit" : "sticky" }} className={css.navigationMenu}>
             <img className={css.siteLogo} src={Logo} alt="logo" />
             <Box className={css.navigationMenuList}>
                 {

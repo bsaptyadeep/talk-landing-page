@@ -1,0 +1,36 @@
+.featuresBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--light-purple-50-opacity);
+    padding: 3rem 0px;
+    border-radius: 1rem;
+}
+
+.featuresBox h2 {
+    color: var(--dark-indigio);
+}
+
+.dbLogoImageRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.dbLogoImageRow img {
+    width: 200px;
+}
+
+.supportCommingSoon img {
+    width: 100px;
+}
+
+@media (max-width: 700px) {
+    .supportCommingSoon img {
+        width: 50px;
+    }
+}
