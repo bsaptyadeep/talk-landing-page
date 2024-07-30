@@ -1,35 +1,37 @@
 import React from 'react';
 import css from './style.module.css';
 import { Box, Typography } from '@mui/material';
+import { MAVEN_AI_APPLICATION } from '../../constants';
 
 const IntroPage = () => {
   return (
     <Box className={css.introPage}>
       <Box className={css.tryNew}>
-        <Box className={css.tryNewLeft}>
-          Try Now
-        </Box>
+        <a style={{ textDecoration: "none" }} href={MAVEN_AI_APPLICATION}>
+          <Box className={css.tryNewLeft}>
+            Try Now
+          </Box>
+        </a>
         <Box className={css.tryNowDivider}>
           |
         </Box>
         <Box className={css.tryNewRight}>
-          SiteGPT is Live
+          MavenAI is Live
         </Box>
       </Box>
       <Box className={css.introHeaderContainer}>
         <p className={css.introHeader}>
-          Build your <span>AI Workforce</span>
+          Chatting is <span>Coding</span>
         </p>
         <p className={css.introText}>
-          Recruit teams of AI agents to complete tasks on autopilot.
-          ‍Grow your business, not your headcount.
+          Stop worrying about making applications to query your SQL Database. Try MavenAI, we seemlessly connect with your SQL Database to skyrocket your productivity.
         </p>
       </Box>
       <Box className={css.introButtonContainer}>
         <Box className={css.introButtonGroup}>
-          <button className={css.violetButton}>
+          <a style={{ textDecoration: "none" }} href={MAVEN_AI_APPLICATION}><button className={css.violetButton}>
             Try for free
-          </button>
+          </button></a>
           <button className={css.greyButton}>
             Request a demo
           </button>

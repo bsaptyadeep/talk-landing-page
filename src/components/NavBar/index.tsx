@@ -4,6 +4,7 @@ import css from './styles.module.css';
 import Logo from '../../assets/images/Frame 14410.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import HamburgerMenu from '../HamburgerMenu';
+import { MAVEN_AI_APPLICATION } from '../../constants';
 
 export interface INavigationItem {
     id: string,
@@ -69,9 +70,9 @@ const Navbar = () => {
             </Box>
             <Box className={css.navRightButtonGroup}>
                 <button className={css.plainButton}>
-                    Become a partner
+                    Book a demo
                 </button>
-                <a style={{ textDecoration: "none" }} href="https://data-matter.vercel.app/">
+                <a style={{ textDecoration: "none" }} href={MAVEN_AI_APPLICATION}>
                     <button className={css.violetButton}>
                         Sign Up
                     </button>
